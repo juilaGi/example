@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <style type="text/css">
+            @import url("style.css");
+        </style>
+    </head>
+    <body class="chat_1">
+        <form id="form">
+            <label>User: </label><input type="text" id="user" placeholder="Enter your login"/>
+            <div type="text" id="container" class="container">
+                <div type="text" id="dialog" class="dialog"></div>
+            </div>
+            <div style="display: flex">
+                <textarea type="text" id="msg" class="msg" placeholder="Enter your message"
+                    onkeypress="submitKey(event)"></textarea>
+                <button type="submit" class="button">Sent!<br>(Shift + Enter)</button>
+            </div>
+        </form>
+        <script src="chat.js"></script>
+    </body>
+</html>
